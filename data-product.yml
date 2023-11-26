@@ -1,0 +1,17 @@
+---
+id: berlin-building-permits
+name: Berlin Building Permits (source-aligned)
+metadata:
+  - ownership:
+  - schema:
+description:
+input_ports:
+output_ports:
+metrics:
+  - quality:
+  - operational:
+classification:
+tags:
+  - berlin
+  - building
+  - housing

@@ -6,6 +6,222 @@ metadata:
   - schema:
 description:
 input_ports:
+  - id: berlin-building-permits-2023-12
+    metadata:
+      name: Baugenehmigungen in Berlin Dezember 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-02-23
+    files:
+      - https://download.statistik-berlin-brandenburg.de/1017aa0ba02c7221/686c9dc31d49/SB_F02-01-00_2023m12_BE.xlsx
+  - id: berlin-building-permits-2023-11
+    metadata:
+      name: Baugenehmigungen in Berlin November 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-01-11
+    files:
+      - https://download.statistik-berlin-brandenburg.de/bb809c044e8fc93f/cf791ad4c538/SB_F02-01-00_2023m11_BB.xlsx
+  - id: berlin-building-permits-2023-10
+    metadata:
+      name: Baugenehmigungen in Berlin Oktober 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-12-12
+    files:
+      - https://download.statistik-berlin-brandenburg.de/51bd0b62e5b59783/43341636a62e/SB_F02-01-00_2023m10_BE.xlsx
+  - id: berlin-building-permits-2023-09
+    metadata:
+      name: Baugenehmigungen in Berlin September 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-11-10
+    files:
+      - https://download.statistik-berlin-brandenburg.de/98b0a5aa38944f5a/5ed8372f1475/SB_F02-01-00_2023m09_BE.xlsx
+  - id: berlin-building-permits-2023-08
+    metadata:
+      name: Baugenehmigungen in Berlin August 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-10-13
+    files:
+      - https://download.statistik-berlin-brandenburg.de/a91e660151958abf/c83898fd035a/SB_F02-01-00_2023m08_BE.xlsx
+  - id: berlin-building-permits-2023-07
+    metadata:
+      name: Baugenehmigungen in Berlin Juli 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-09-14
+    files:
+      - https://download.statistik-berlin-brandenburg.de/8cc24ef15ab5e9c2/2eb45802fd19/SB_F02-01-00_2023m07_BE.xlsx
+  - id: berlin-building-permits-2023-06
+    metadata:
+      name: Baugenehmigungen in Berlin Juni 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-08-14
+    files:
+      - https://download.statistik-berlin-brandenburg.de/963015a77a574376/09cabe293976/SB_F02-01-00_2023m06_BE.xlsx
+  - id: berlin-building-permits-2023-05
+    metadata:
+      name: Baugenehmigungen in Berlin Mai 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-07-12
+    files:
+      - https://download.statistik-berlin-brandenburg.de/00b90d7f5a532011/2fca84b9d98d/SB_F02-01-00_2023m05_BE.xlsx
+  - id: berlin-building-permits-2023-04
+    metadata:
+      name: Baugenehmigungen in Berlin April 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-06-14
+    files:
+      - https://download.statistik-berlin-brandenburg.de/af54465709f4d659/eedced6c7630/SB_F02-01-00_2023m04_BE.xlsx
+  - id: berlin-building-permits-2023-03
+    metadata:
+      name: Baugenehmigungen in Berlin März 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-05-15
+    files:
+      - https://download.statistik-berlin-brandenburg.de/95524bbe639cbae8/4513b50570e2/SB_F02-01-00_2023m03_BE.xlsx
+  - id: berlin-building-permits-2023-02
+    metadata:
+      name: Baugenehmigungen in Berlin Februar 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-04-12
+    files:
+      - https://download.statistik-berlin-brandenburg.de/dc1d908d2fcd5aa6/8a3697f6a0d3/SB_F02-01-00_2023m02_BE.xlsx
+  - id: berlin-building-permits-2023-01
+    metadata:
+      name: Baugenehmigungen in Berlin Januar 2023
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-04-03
+    files:
+      - https://download.statistik-berlin-brandenburg.de/8e9aedcc69f0b528/738d0afa7025/SB_F02-01-00_2023m01_BE.xlsx
+  - id: berlin-building-permits-2022-12
+    metadata:
+      name: Baugenehmigungen in Berlin Dezember 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-03-31
+    files:
+      - https://download.statistik-berlin-brandenburg.de/e65ff36b1cd3b347/f1a6c8838722/SB_F02-01-00_2022m12_BE.xlsx
+  - id: berlin-building-permits-2022-11
+    metadata:
+      name: Baugenehmigungen in Berlin November 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2023-01-10
+    files:
+      - https://download.statistik-berlin-brandenburg.de/7514d387150f33f3/d4789691a0f2/SB_F02-01-00_2022m11_BE.xlsx
+  - id: berlin-building-permits-2022-10
+    metadata:
+      name: Baugenehmigungen in Berlin Oktober 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-12-13
+    files:
+      - https://download.statistik-berlin-brandenburg.de/ba274b8de18df033/a299f8789b0e/SB_F02-01-00_2022m10_BE.xlsx
+  - id: berlin-building-permits-2022-09
+    metadata:
+      name: Baugenehmigungen in Berlin September 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-11-17
+    files:
+      - https://download.statistik-berlin-brandenburg.de/0c390f5d0da1c1cd/bacfac5b9fae/SB_F02-01-00_2022m09_BE.xlsx
+  - id: berlin-building-permits-2022-08
+    metadata:
+      name: Baugenehmigungen in Berlin August 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-10-12
+    files:
+      - https://download.statistik-berlin-brandenburg.de/732208ea4a6edcfa/7c6cdfd1ac1d/SB_F02-01-00_2022m08_BE.xlsx
+  - id: berlin-building-permits-2022-07
+    metadata:
+      name: Baugenehmigungen in Berlin Juli 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-09-12
+    files:
+      - https://download.statistik-berlin-brandenburg.de/0740f2881e598e0c/a649c0bd7d37/SB_F02-01-00_2022m07_BE.xlsx
+  - id: berlin-building-permits-2022-06
+    metadata:
+      name: Baugenehmigungen in Berlin Juni 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-08-17
+    files:
+      - https://download.statistik-berlin-brandenburg.de/201ffa81fefdabbf/d730527c68f5/SB_F02-01-00_2022m06_BE.xlsx
+  - id: berlin-building-permits-2022-05
+    metadata:
+      name: Baugenehmigungen in Berlin Mai 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-07-15
+    files:
+      - https://download.statistik-berlin-brandenburg.de/b5dc735564d27868/9262355a9897/SB_F02-01-00_2022m05_BE.xlsx
+  - id: berlin-building-permits-2022-04
+    metadata:
+      name: Baugenehmigungen in Berlin April 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-06-09
+    files:
+      - https://download.statistik-berlin-brandenburg.de/6538fcc4292a7d0a/73fd5807ec55/SB_F02-01-00_2022m04_BB.xlsx
+  - id: berlin-building-permits-2022-03
+    metadata:
+      name: Baugenehmigungen in Berlin März 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-05-09
+    files:
+      - https://download.statistik-berlin-brandenburg.de/bd020e32e7cf03be/ba039244a282/SB_F02-01-00_2022m03_BE.xlsx
+  - id: berlin-building-permits-2022-02
+    metadata:
+      name: Baugenehmigungen in Berlin Februar 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-04-11
+    files:
+      - https://download.statistik-berlin-brandenburg.de/a70363f465a318a6/b1e8e395e4ff/SB_F02-01-00_2022m02_BE.xlsx
+  - id: berlin-building-permits-2022-01
+    metadata:
+      name: Baugenehmigungen in Berlin Januar 2022
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-03-24
+    files:
+      - https://download.statistik-berlin-brandenburg.de/5aadbe12edb58b04/615b2848fc6a/SB_F02-01-00_2022m01_BB.xlsx
 output_ports:
 metrics:
   - quality:

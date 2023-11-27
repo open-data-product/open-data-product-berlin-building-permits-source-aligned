@@ -23,7 +23,7 @@ input_ports:
       license: CC-BY-3.0-Namensnennung
       updated: 2024-01-11
     files:
-      - https://download.statistik-berlin-brandenburg.de/bb809c044e8fc93f/cf791ad4c538/SB_F02-01-00_2023m11_BB.xlsx
+      - https://download.statistik-berlin-brandenburg.de/6acf744d882acddf/a08f6002fdd9/SB_F02-01-00_2023m11_BE.xlsx
   - id: berlin-building-permits-2023-10
     metadata:
       name: Baugenehmigungen in Berlin Oktober 2023
@@ -194,7 +194,7 @@ input_ports:
       license: CC-BY-3.0-Namensnennung
       updated: 2022-06-09
     files:
-      - https://download.statistik-berlin-brandenburg.de/6538fcc4292a7d0a/73fd5807ec55/SB_F02-01-00_2022m04_BB.xlsx
+      - https://download.statistik-berlin-brandenburg.de/12e9ef3d342eea29/412fb85f519e/SB_F02-01-00_2022m04_BE.xlsx
   - id: berlin-building-permits-2022-03
     metadata:
       name: Baugenehmigungen in Berlin März 2022
@@ -221,7 +221,7 @@ input_ports:
       license: CC-BY-3.0-Namensnennung
       updated: 2024-03-24
     files:
-      - https://download.statistik-berlin-brandenburg.de/5aadbe12edb58b04/615b2848fc6a/SB_F02-01-00_2022m01_BB.xlsx
+      - https://download.statistik-berlin-brandenburg.de/3a6c9d4617950514/9b4ab75ab986/SB_F02-01-00_2022m01_BE.xlsx
 output_ports:
 metrics:
   - quality:

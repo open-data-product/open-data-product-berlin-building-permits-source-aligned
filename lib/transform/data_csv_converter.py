@@ -19,6 +19,7 @@ def convert_data_to_csv(source_path, results_path, clean=False, quiet=False):
             source_file_path = os.path.join(source_path, subdir, file_name)
 
             convert_file_to_csv_completions_new_buildings(source_file_path, clean=clean, quiet=quiet)
+            convert_file_to_csv_permits_new_residential_buildings(source_file_path, clean=clean, quiet=quiet)
 
 
 def convert_file_to_csv_completions_new_buildings(source_file_path, clean=False, quiet=False):
@@ -47,6 +48,43 @@ def convert_file_to_csv_completions_new_buildings(source_file_path, clean=False,
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
+            .replace("…", None) \
+            .dropna() \
+            .tail(1)
+
+        # Write csv file
+        write_csv_file(dataframe, file_path_csv, quiet)
+    except Exception as e:
+        print(f"✗️ Exception: {str(e)}")
+
+
+def convert_file_to_csv_permits_new_residential_buildings(source_file_path, clean=False, quiet=False):
+    source_file_name, source_file_extension = os.path.splitext(source_file_path)
+    file_path_csv = f"{source_file_name}-2-permits-new-residential-buildings.csv"
+
+    # Check if result needs to be generated
+    if not clean and os.path.exists(file_path_csv):
+        if not quiet:
+            print(f"✓ Already exists {os.path.basename(file_path_csv)}")
+        return
+
+    # Determine engine
+    engine = build_engine(source_file_extension)
+
+    try:
+        # Iterate over sheets
+        sheet = "Baugen. Tab. 2 "
+        skiprows = 10
+        names = ["year", "residential_buildings", "residential_buildings_with_1_apartment",
+                 "residential_buildings_with_2_apartments", "residential_buildings_with_3_or_more_apartments",
+                 "apartments", "volume", "living_area", "estimated_costs",
+                 "apartments_in_new_non_residential_buildings"]
+        drop_columns = ["year"]
+
+        dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
+                                  index_col=False) \
+            .drop(columns=drop_columns, errors="ignore") \
+            .replace("-", 0) \
             .replace("…", None) \
             .dropna() \
             .tail(1)

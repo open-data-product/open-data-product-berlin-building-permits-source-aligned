@@ -33,6 +33,8 @@ def convert_data_to_csv(source_path, results_path, clean=False, quiet=False):
             convert_file_to_csv_permits_by_district_new_buildings(source_file_path, clean=clean, quiet=quiet)
             convert_file_to_csv_permits_by_district_new_buildings_with_1_or_2_apartments(
                 source_file_path, clean=clean, quiet=quiet)
+            convert_file_to_csv_permits_by_district_new_non_residential_buildings(
+                source_file_path, clean=clean, quiet=quiet)
 
 
 def convert_file_to_csv_permits_new_buildings_including_measures_on_existing_buildings(source_file_path, clean=False,
@@ -359,9 +361,45 @@ def convert_file_to_csv_permits_by_district_new_buildings_with_1_or_2_apartments
 
     try:
         sheet = "Baugen. Tab. 9"
-        skiprows = 7
+        skiprows = 8
         names = ["district_name", "buildings", "volume", "usage_area", "apartments", "apartments_usage_area",
                  "estimated_costs"]
+        drop_columns = []
+
+        dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
+                                  index_col=False) \
+            .drop(columns=drop_columns, errors="ignore") \
+            .replace("–", 0) \
+            .assign(district_id=lambda df: df["district_name"].apply(lambda row: build_district_id(row))) \
+            .head(12) \
+            .drop("district_name", axis=1)
+
+        dataframe.reset_index(drop=True, inplace=True)
+        dataframe.insert(0, "district_id", dataframe.pop("district_id"))
+
+        # Write csv file
+        write_csv_file(dataframe, file_path_csv, quiet)
+    except Exception as e:
+        print(f"✗️ Exception: {str(e)}")
+
+
+def convert_file_to_csv_permits_by_district_new_non_residential_buildings(source_file_path, clean, quiet):
+    source_file_name, source_file_extension = os.path.splitext(source_file_path)
+    file_path_csv = f"{source_file_name}-10-permits-by-district-new-non-residential-buildings.csv"
+
+    # Check if result needs to be generated
+    if not clean and os.path.exists(file_path_csv):
+        if not quiet:
+            print(f"✓ Already exists {os.path.basename(file_path_csv)}")
+        return
+
+    # Determine engine
+    engine = build_engine(source_file_extension)
+
+    try:
+        sheet = "Baugen. Tab. 10"
+        skiprows = 8
+        names = ["district_name", "buildings", "volume", "usage_area", "apartments", "apartments_usage_area"]
         drop_columns = []
 
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,

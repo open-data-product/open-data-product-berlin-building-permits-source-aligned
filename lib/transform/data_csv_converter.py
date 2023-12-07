@@ -26,11 +26,12 @@ def convert_data_to_csv(source_path, results_path, clean=False, quiet=False):
             convert_file_to_csv_permits_by_type_and_contractor_measures_on_existing_buildings(
                 source_file_path, clean=clean, quiet=quiet)
             convert_file_to_csv_permits_by_type_and_contractor_new_buildings(source_file_path, clean=clean, quiet=quiet)
-            convert_file_to_csv_completions_by_district_including_measures_on_existing_buildings(
+            convert_file_to_csv_permits_by_district_including_measures_on_existing_buildings(
                 source_file_path, clean=clean, quiet=quiet)
-            convert_file_to_csv_completions_by_district_measures_on_existing_buildings(
+            convert_file_to_csv_permits_by_district_measures_on_existing_buildings(
                 source_file_path, clean=clean, quiet=quiet)
-            convert_file_to_csv_completions_by_district_new_buildings(
+            convert_file_to_csv_permits_by_district_new_buildings(source_file_path, clean=clean, quiet=quiet)
+            convert_file_to_csv_permits_by_district_new_buildings_with_1_or_2_apartments(
                 source_file_path, clean=clean, quiet=quiet)
 
 
@@ -232,8 +233,8 @@ def convert_file_to_csv_permits_by_type_and_contractor_new_buildings(source_file
         print(f"✗️ Exception: {str(e)}")
 
 
-def convert_file_to_csv_completions_by_district_including_measures_on_existing_buildings(source_file_path, clean,
-                                                                                         quiet):
+def convert_file_to_csv_permits_by_district_including_measures_on_existing_buildings(source_file_path, clean,
+                                                                                     quiet):
     source_file_name, source_file_extension = os.path.splitext(source_file_path)
     file_path_csv = f"{source_file_name}-6-permits-by-districts-including-measures-on-existing-buildings.csv"
 
@@ -269,8 +270,8 @@ def convert_file_to_csv_completions_by_district_including_measures_on_existing_b
         print(f"✗️ Exception: {str(e)}")
 
 
-def convert_file_to_csv_completions_by_district_measures_on_existing_buildings(source_file_path, clean,
-                                                                               quiet):
+def convert_file_to_csv_permits_by_district_measures_on_existing_buildings(source_file_path, clean,
+                                                                           quiet):
     source_file_name, source_file_extension = os.path.splitext(source_file_path)
     file_path_csv = f"{source_file_name}-7-permits-by-districts-measures-on-existing-buildings.csv"
 
@@ -306,7 +307,7 @@ def convert_file_to_csv_completions_by_district_measures_on_existing_buildings(s
         print(f"✗️ Exception: {str(e)}")
 
 
-def convert_file_to_csv_completions_by_district_new_buildings(source_file_path, clean, quiet):
+def convert_file_to_csv_permits_by_district_new_buildings(source_file_path, clean, quiet):
     source_file_name, source_file_extension = os.path.splitext(source_file_path)
     file_path_csv = f"{source_file_name}-8-permits-by-districts-new-buildings.csv"
 
@@ -322,6 +323,43 @@ def convert_file_to_csv_completions_by_district_new_buildings(source_file_path, 
     try:
         sheet = "Baugen. Tab. 8"
         skiprows = 8
+        names = ["district_name", "buildings", "volume", "usage_area", "apartments", "apartments_usage_area",
+                 "estimated_costs"]
+        drop_columns = []
+
+        dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
+                                  index_col=False) \
+            .drop(columns=drop_columns, errors="ignore") \
+            .replace("–", 0) \
+            .assign(district_id=lambda df: df["district_name"].apply(lambda row: build_district_id(row))) \
+            .head(12) \
+            .drop("district_name", axis=1)
+
+        dataframe.reset_index(drop=True, inplace=True)
+        dataframe.insert(0, "district_id", dataframe.pop("district_id"))
+
+        # Write csv file
+        write_csv_file(dataframe, file_path_csv, quiet)
+    except Exception as e:
+        print(f"✗️ Exception: {str(e)}")
+
+
+def convert_file_to_csv_permits_by_district_new_buildings_with_1_or_2_apartments(source_file_path, clean, quiet):
+    source_file_name, source_file_extension = os.path.splitext(source_file_path)
+    file_path_csv = f"{source_file_name}-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv"
+
+    # Check if result needs to be generated
+    if not clean and os.path.exists(file_path_csv):
+        if not quiet:
+            print(f"✓ Already exists {os.path.basename(file_path_csv)}")
+        return
+
+    # Determine engine
+    engine = build_engine(source_file_extension)
+
+    try:
+        sheet = "Baugen. Tab. 9"
+        skiprows = 7
         names = ["district_name", "buildings", "volume", "usage_area", "apartments", "apartments_usage_area",
                  "estimated_costs"]
         drop_columns = []

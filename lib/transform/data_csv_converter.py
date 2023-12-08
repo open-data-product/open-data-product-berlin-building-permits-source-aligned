@@ -238,7 +238,7 @@ def convert_file_to_csv_permits_by_type_and_contractor_new_buildings(source_file
 def convert_file_to_csv_permits_by_district_including_measures_on_existing_buildings(source_file_path, clean,
                                                                                      quiet):
     source_file_name, source_file_extension = os.path.splitext(source_file_path)
-    file_path_csv = f"{source_file_name}-6-permits-by-districts-including-measures-on-existing-buildings.csv"
+    file_path_csv = f"{source_file_name}-6-permits-by-district-including-measures-on-existing-buildings.csv"
 
     # Check if result needs to be generated
     if not clean and os.path.exists(file_path_csv):
@@ -275,7 +275,7 @@ def convert_file_to_csv_permits_by_district_including_measures_on_existing_build
 def convert_file_to_csv_permits_by_district_measures_on_existing_buildings(source_file_path, clean,
                                                                            quiet):
     source_file_name, source_file_extension = os.path.splitext(source_file_path)
-    file_path_csv = f"{source_file_name}-7-permits-by-districts-measures-on-existing-buildings.csv"
+    file_path_csv = f"{source_file_name}-7-permits-by-district-measures-on-existing-buildings.csv"
 
     # Check if result needs to be generated
     if not clean and os.path.exists(file_path_csv):
@@ -311,7 +311,7 @@ def convert_file_to_csv_permits_by_district_measures_on_existing_buildings(sourc
 
 def convert_file_to_csv_permits_by_district_new_buildings(source_file_path, clean, quiet):
     source_file_name, source_file_extension = os.path.splitext(source_file_path)
-    file_path_csv = f"{source_file_name}-8-permits-by-districts-new-buildings.csv"
+    file_path_csv = f"{source_file_name}-8-permits-by-district-new-buildings.csv"
 
     # Check if result needs to be generated
     if not clean and os.path.exists(file_path_csv):

@@ -2,8 +2,75 @@
 id: berlin-building-permits
 name: Berlin Building Permits (source-aligned)
 metadata:
-  - ownership:
+  - ownership: Open Lifeworlds
+  - domain: geodata
   - schema:
+      # 1 permits including measures on existing buildings
+      - building_permits_total: number of building permits
+      - building_permits_residential_buildings: number of building permits for residential buildings
+      - building_permits_non_residential_buildings: number of building permits for non-residential buildings
+      - building_measure_on_existing_buildings:  number of building permits for existing buildings
+      - usage_area: building permits usage area in 100sqm
+      - living_area: building permits living area 100sqm
+      - apartments: number of apartments
+      - apartment_rooms: number of living rooms
+      - estimated_costs: estimated costs
+      # 2 permits new residential buildings
+      - buildings: number of building completions
+      - buildings_with_1_apartment: number of building completions with 1 apartment
+      - buildings_with_2_apartments: number of building completions with 2 apartments
+      - buildings_with_3_or_more_apartments: number of building completions with 3 or more apartments
+      - apartments: number of apartments
+      - volume: volume of apartments in 1000qm
+      - living_area: living area in 100sqm
+      - estimated_costs: estimated costs
+      - apartments_in_new_non_residential_buildings: apartments in new non-residential buildings
+      # 3 permits by type and constructor including measures on existing buildings
+      - type: type
+      - measures: number of measures
+      - usage_area: usage area in 100sqm
+      - apartments: number of apartments
+      - living_area: living are in 100sqm
+      - living_rooms: number of living rooms
+      - estimated_costs: estimated costs
+      # 4 permits by type and constructor
+      - type: type
+      - buildings: number of buildings
+      - usage_area: usage area in 100sqm
+      - apartments: number of apartments
+      - living_area: living are in 100sqm
+      - living_rooms: number of living rooms
+      - estimated_costs: estimated costs
+      # 5 permits by type and constructor new buildings
+      - type: type
+      - buildings: number of buildings
+      - volume: buildings volume in 1000qm
+      - usage_area: buildings usage are in 100sqm
+      - apartments: number of apartments
+      - living_area: living are in 100sqm
+      - living_rooms: number of living rooms
+      - estimated_costs: estimated costs
+      # 6 permits by district including measures on existing buildings
+      # 7 permits by district measures on existing buildings
+      - buildings: number of buildings
+      - usage_area: buildings usage area in 100sqm
+      - apartments: number of apartments
+      - apartments_usage_area: apartments usage area in 100sqm
+      - estimated_costs: estimated costs
+      # 8 permits by district new buildings
+      # 9 permits by district new buildings with 1 or 2 apartments
+      - buildings: number of buildings
+      - volume: buildings volume in 1000qm
+      - usage_area: buildings usage are in 100sqm
+      - apartments: number of apartments
+      - apartments_usage_area: apartments usage area in 100sqm
+      - estimated_costs: estimated costs
+      # 10 permits by district new non-residential buildings
+      - buildings: number of buildings
+      - volume: buildings volume in 1000qm
+      - usage_area: buildings usage are in 100sqm
+      - apartments: number of apartments
+      - apartments_usage_area: apartments usage area in 100sqm
 description:
 input_ports:
   - id: berlin-building-permits-2023-12
@@ -223,10 +290,329 @@ input_ports:
     files:
       - https://download.statistik-berlin-brandenburg.de/3a6c9d4617950514/9b4ab75ab986/SB_F02-01-00_2022m01_BE.xlsx
 output_ports:
+  - id: berlin-building-permits
+    metadata:
+      name: Berlin building permits
+      author: Open Lifeworlds
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/tree/main/data
+      license: CC-BY-4.0
+      updated: 2024-03-03
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-01/berlin-building-permits-2022-01-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-02/berlin-building-permits-2022-02-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-03/berlin-building-permits-2022-03-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-04/berlin-building-permits-2022-04-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-05/berlin-building-permits-2022-05-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-06/berlin-building-permits-2022-06-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-07/berlin-building-permits-2022-07-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-08/berlin-building-permits-2022-08-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-09/berlin-building-permits-2022-09-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-10/berlin-building-permits-2022-10-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-11/berlin-building-permits-2022-11-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2022-12/berlin-building-permits-2022-12-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-01/berlin-building-permits-2023-01-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-02/berlin-building-permits-2023-02-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-03/berlin-building-permits-2023-03-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-04/berlin-building-permits-2023-04-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-05/berlin-building-permits-2023-05-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-06/berlin-building-permits-2023-06-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-07/berlin-building-permits-2023-07-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-08/berlin-building-permits-2023-08-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-09/berlin-building-permits-2023-09-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-10/berlin-building-permits-2023-10-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-11/berlin-building-permits-2023-11-10-permits-by-district-new-non-residential-buildings.csv
+
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-4-completions-by-type-and-constructor.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-6-permits-by-districts-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-6-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-7-permits-by-districts-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-8-permits-by-districts-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/main/data/berlin-building-permits-2023-12/berlin-building-permits-2023-12-10-permits-by-district-new-non-residential-buildings.csv
 metrics:
   - quality:
   - operational:
-classification:
+classification: source-aligned
 tags:
   - berlin
   - building

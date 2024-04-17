@@ -1,6 +1,6 @@
 import os
 import warnings
-
+import re
 import pandas as pd
 
 from lib.tracking_decorator import TrackingDecorator
@@ -246,8 +246,11 @@ def convert_file_to_csv_permits_by_type_and_contractor_new_buildings(source_file
     # Determine engine
     engine = build_engine(source_file_extension)
 
+    year = re.findall(r'\d{4}', source_file_name)[-1]
+    month = re.findall(r'\d{2}', source_file_name)[-1]
+
     try:
-        sheet = "Baugen. Tab. 5 "
+        sheet = "Baugen. Tab. 5" if year == "2022" and month == "12" else "Baugen. Tab. 5 "
         skiprows = 7
         names = ["type", "buildings", "volume", "usage_area", "apartments", "living_area", "living_rooms",
                  "estimated_costs"]

@@ -2,19 +2,19 @@ type_index,type_parent_index,type,buildings,usage_area,apartments,living_area,li
 0,-1,residential_and_non_residential_buildings,73,6.9,80,81.2,274,95968
 1,0,residential_buildings,64,2,76,77.0,258,32025
 2,1,dormitories,0,0,0,0.0,0,0
-3,1,residential_buildings_with_condominium,13,"– 0,1",14,21.3,67,5632
+3,1,residential_buildings_with_condominium,13,-0.1,14,21.3,67,5632
 4,1,public_builders,0,0,0,0.0,0,0
-5,1,companies,16,"– 1,2",29,30.5,98,11543
-6,5,housing_companies,9,"– 0,9",15,21.3,65,6321
+5,1,companies,16,-1.2,29,30.5,98,11543
+6,5,housing_companies,9,-0.9,15,21.3,65,6321
 7,5,real_estate_funds,4,1.6,12,7.0,25,4401
 8,5,agriculture_forestry_animal_husbandry_fishing,0,0,0,0.0,0,0
 9,5,manufacturing_industry,0,0,0,0.0,0,0
-10,5,trade_banking_services_insurance_transport_and_communications,3,"– 1,8",2,2.3,8,821
+10,5,trade_banking_services_insurance_transport_and_communications,3,-1.8,2,2.3,8,821
 11,1,private_households,46,2.8,21,25.6,83,10578
 12,1,non_profit_organizations,2,0.4,26,20.8,77,9904
 13,0,non_residential_buildings,9,4.9,4,4.2,16,63943
 14,13,institution_buildings,0,0,0,0.0,0,0
-15,13,office_and_administration_buildings,4,"– 7,9",1,1.3,6,59628
+15,13,office_and_administration_buildings,4,-7.9,1,1.3,6,59628
 16,13,algricultural_buildings,0,0,0,0.0,0,0
 17,13,non_algricultural_buildings,2,10.8,3,2.9,10,1144
 18,17,factory_and_workshop_buildings,0,0,0,0.0,0,0
@@ -31,4 +31,4 @@ type_index,type_parent_index,type,buildings,usage_area,apartments,living_area,li
 29,25,manufacturing_industry,0,0,0,0.0,0,0
 30,25,trade_banking_services_insurance_transport_and_communications,5,1.6,0,0.0,0,59705
 31,13,private_households,0,0,0,0.0,0,0
-32,13,non_profit_organisations,1,"– 1,2",1,1.3,6,223
+32,13,non_profit_organisations,1,-1.2,1,1.3,6,223

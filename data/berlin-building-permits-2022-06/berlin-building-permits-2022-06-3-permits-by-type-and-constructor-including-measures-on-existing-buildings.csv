@@ -11,7 +11,7 @@ type_index,type_parent_index,type,measures,usage_area,apartments,living_area,liv
 9,5,manufacturing_industry,0,0,0,0.0,0,0
 10,5,trade_banking_services_insurance_transport_and_communications,11,11.1,72,48.1,190,10066
 11,1,private_households,125,9.8,108,137.8,530,38568
-12,1,non_profit_organizations,2,"– 3,8",4,3.6,12,330
+12,1,non_profit_organizations,2,-3.8,4,3.6,12,330
 13,0,non_residential_buildings,35,1331.4,56,42.9,125,382963
 14,13,institution_buildings,0,0,0,0.0,0,0
 15,13,office_and_administration_buildings,16,914.8,0,0.0,0,245220

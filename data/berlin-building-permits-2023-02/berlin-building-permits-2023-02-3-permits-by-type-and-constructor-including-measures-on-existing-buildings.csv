@@ -6,7 +6,7 @@ type_index,type_parent_index,type,measures,usage_area,apartments,living_area,liv
 4,1,public_builders,3,13.8,173,115.8,436,13962
 5,1,companies,67,36.4,1052,476.0,1925,147282
 6,5,housing_companies,38,27,283,215.2,740,56497
-7,5,real_estate_funds,15,"– 6,0",32,25.5,89,7745
+7,5,real_estate_funds,15,-6.0,32,25.5,89,7745
 8,5,agriculture_forestry_animal_husbandry_fishing,0,0,0,0.0,0,0
 9,5,manufacturing_industry,0,0,0,0.0,0,0
 10,5,trade_banking_services_insurance_transport_and_communications,14,15.4,737,235.3,1096,83040

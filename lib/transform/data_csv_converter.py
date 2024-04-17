@@ -1,8 +1,11 @@
 import os
+import warnings
 
 import pandas as pd
 
 from lib.tracking_decorator import TrackingDecorator
+
+warnings.filterwarnings("ignore")
 
 
 @TrackingDecorator.track_time
@@ -64,9 +67,17 @@ def convert_file_to_csv_permits_new_buildings_including_measures_on_existing_bui
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
+            .replace("-", 0) \
             .replace("…", None) \
+            .replace("–", 0) \
+            .replace("—", 0) \
             .dropna() \
-            .tail(1)
+            .tail(1) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         # Write csv file
         write_csv_file(dataframe, file_path_csv, quiet)
@@ -102,8 +113,20 @@ def convert_file_to_csv_permits_new_residential_buildings(source_file_path, clea
             .drop(columns=drop_columns, errors="ignore") \
             .replace("-", 0) \
             .replace("…", None) \
+            .replace("–", 0) \
+            .replace("—", 0) \
             .dropna() \
-            .tail(1)
+            .tail(1) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
+
+        for column in ["residential_buildings", "residential_buildings_with_1_apartment",
+                 "residential_buildings_with_2_apartments", "residential_buildings_with_3_or_more_apartments",
+                 "apartments", "apartments_in_new_non_residential_buildings"]:
+            dataframe[column] = dataframe[column].astype(float).astype(int)
 
         # Write csv file
         write_csv_file(dataframe, file_path_csv, quiet)
@@ -136,8 +159,16 @@ def convert_file_to_csv_permits_by_type_and_contractor_including_measures_on_exi
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
             .dropna() \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
-            .assign(type=lambda df: df["type"].apply(lambda row: build_type_name(row)))
+            .replace("—", 0) \
+            .assign(type=lambda df: df["type"].apply(lambda row: build_type_name(row))) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe = dataframe.assign(type_index=lambda df: df.index) \
@@ -177,8 +208,16 @@ def convert_file_to_csv_permits_by_type_and_contractor_measures_on_existing_buil
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
             .dropna() \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
-            .assign(type=lambda df: df["type"].apply(lambda row: build_type_name(row)))
+            .replace("—", 0) \
+            .assign(type=lambda df: df["type"].apply(lambda row: build_type_name(row))) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe = dataframe.assign(type_index=lambda df: df.index) \
@@ -218,8 +257,16 @@ def convert_file_to_csv_permits_by_type_and_contractor_new_buildings(source_file
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
             .dropna() \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
-            .assign(type=lambda df: df["type"].apply(lambda row: build_type_name(row)))
+            .replace("—", 0) \
+            .assign(type=lambda df: df["type"].apply(lambda row: build_type_name(row))) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe = dataframe.assign(type_index=lambda df: df.index) \
@@ -258,10 +305,18 @@ def convert_file_to_csv_permits_by_district_including_measures_on_existing_build
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
+            .replace("—", 0) \
             .assign(district_id=lambda df: df["district_name"].apply(lambda row: build_district_id(row))) \
             .head(12) \
-            .drop("district_name", axis=1)
+            .drop("district_name", axis=1) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe.insert(0, "district_id", dataframe.pop("district_id"))
@@ -295,10 +350,18 @@ def convert_file_to_csv_permits_by_district_measures_on_existing_buildings(sourc
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
+            .replace("—", 0) \
             .assign(district_id=lambda df: df["district_name"].apply(lambda row: build_district_id(row))) \
             .head(12) \
-            .drop("district_name", axis=1)
+            .drop("district_name", axis=1) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe.insert(0, "district_id", dataframe.pop("district_id"))
@@ -332,10 +395,18 @@ def convert_file_to_csv_permits_by_district_new_buildings(source_file_path, clea
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
+            .replace("—", 0) \
             .assign(district_id=lambda df: df["district_name"].apply(lambda row: build_district_id(row))) \
             .head(12) \
-            .drop("district_name", axis=1)
+            .drop("district_name", axis=1) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe.insert(0, "district_id", dataframe.pop("district_id"))
@@ -369,10 +440,18 @@ def convert_file_to_csv_permits_by_district_new_buildings_with_1_or_2_apartments
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
+            .replace("—", 0) \
             .assign(district_id=lambda df: df["district_name"].apply(lambda row: build_district_id(row))) \
             .head(12) \
-            .drop("district_name", axis=1)
+            .drop("district_name", axis=1) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe.insert(0, "district_id", dataframe.pop("district_id"))
@@ -405,10 +484,18 @@ def convert_file_to_csv_permits_by_district_new_non_residential_buildings(source
         dataframe = pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows, names=names,
                                   index_col=False) \
             .drop(columns=drop_columns, errors="ignore") \
+            .replace("-", 0) \
+            .replace("…", None) \
             .replace("–", 0) \
+            .replace("—", 0) \
             .assign(district_id=lambda df: df["district_name"].apply(lambda row: build_district_id(row))) \
             .head(12) \
-            .drop("district_name", axis=1)
+            .drop("district_name", axis=1) \
+            .astype(str) \
+            .apply(lambda x: x.str.replace('"', '')) \
+            .apply(lambda x: x.str.replace(',', '.')) \
+            .apply(lambda x: x.str.replace('— ', '-')) \
+            .apply(lambda x: x.str.replace('– ', '-'))
 
         dataframe.reset_index(drop=True, inplace=True)
         dataframe.insert(0, "district_id", dataframe.pop("district_id"))

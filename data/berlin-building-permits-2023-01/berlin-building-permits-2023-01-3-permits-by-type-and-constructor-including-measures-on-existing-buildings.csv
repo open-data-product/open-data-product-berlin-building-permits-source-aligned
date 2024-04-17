@@ -6,10 +6,10 @@ type_index,type_parent_index,type,measures,usage_area,apartments,living_area,liv
 4,1,public_builders,26,107.5,682,414.3,1759,96344
 5,1,companies,51,34.2,281,239.8,851,94445
 6,5,housing_companies,38,35.1,247,215.8,756,86337
-7,5,real_estate_funds,5,"– 0,7",14,9.4,26,4101
+7,5,real_estate_funds,5,-0.7,14,9.4,26,4101
 8,5,agriculture_forestry_animal_husbandry_fishing,0,0,0,0.0,0,0
 9,5,manufacturing_industry,0,0,0,0.0,0,0
-10,5,trade_banking_services_insurance_transport_and_communications,8,"– 0,2",20,14.6,69,4007
+10,5,trade_banking_services_insurance_transport_and_communications,8,-0.2,20,14.6,69,4007
 11,1,private_households,95,36.6,118,141.6,488,39400
 12,1,non_profit_organizations,2,0,3,4.6,22,986
 13,0,non_residential_buildings,24,514,1,1.8,10,114101

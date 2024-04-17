@@ -23,7 +23,7 @@ type_index,type_parent_index,type,measures,usage_area,apartments,living_area,liv
 21,17,hotels_and_restaurants,3,5.4,0,0,0,1035
 22,13,other_non_residential_buildings,7,128.0,-1,-2.3,-7,52548
 23,13,selected_infrastructure_buildings,8,150.5,-1,-2.3,-7,60298
-24,13,public_builders,3,105.0,– 1,"– 2,3",– 7,45264
+24,13,public_builders,3,105.0,-1,-2.3,-7,45264
 25,13,companies,22,179.2,0,0,0,44492
 26,25,housing_companies,6,79.9,0,0,0,21435
 27,25,real_estate_funds,0,0.0,0,0,0,0

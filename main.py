@@ -45,7 +45,7 @@ def main(argv):
     # Extract
     #
 
-    extract_data(manifest_path=manifest_path, results_path=raw_path, clean=clean, quiet=quiet)
+    # extract_data(manifest_path=manifest_path, results_path=raw_path, clean=clean, quiet=quiet)
 
     #
     # Transform

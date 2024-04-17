@@ -3,7 +3,7 @@ type_index,type_parent_index,type,measures,usage_area,apartments,living_area,liv
 1,0,residential_buildings,229,183.7,1282,928.3,3493,205568
 2,1,dormitories,2,1.3,191,50.0,219,9527
 3,1,residential_buildings_with_condominium,30,8.7,123,146.3,489,41041
-4,1,public_builders,4,"– 0,6",168,42.9,196,9461
+4,1,public_builders,4,-0.6,168,42.9,196,9461
 5,1,companies,76,136.1,923,658.8,2449,135553
 6,5,housing_companies,41,45.4,416,309.2,1112,63612
 7,5,real_estate_funds,4,-1.1,6,8.5,28,3784
@@ -20,7 +20,7 @@ type_index,type_parent_index,type,measures,usage_area,apartments,living_area,liv
 18,17,factory_and_workshop_buildings,1,4.2,0,0.0,0,2380
 19,17,commercial_buildings,5,60.2,4,1.2,4,38398
 20,17,warehouse_buildings,1,2.6,0,0.0,0,95
-21,17,hotels_and_restaurants,1,"– 14,3",0,0.0,0,30030
+21,17,hotels_and_restaurants,1,-14.3,0,0.0,0,30030
 22,13,other_non_residential_buildings,11,180.9,11,3.7,10,67662
 23,13,selected_infrastructure_buildings,13,249.1,11,3.7,10,84432
 24,13,public_builders,7,130.9,11,3.7,10,56424

@@ -877,7 +877,10 @@ def build_type_parent_index_5(row):
 
 
 def build_district_id(value):
-    value = str(value).lstrip().rstrip().replace(" ", "")
+    value = str(value).lstrip().rstrip() \
+        .replace(" ", "") \
+        .replace("—", "-") \
+        .replace("–", "-")
 
     if value == "Mitte":
         return "01"

@@ -1,12 +1,12 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/issues)
+[![Issues](https://img.shields.io/github/issues/open-data-product/open-data-product-berlin-building-permits-source-aligned)](https://github.com/open-data-product/open-data-product-berlin-building-permits-source-aligned/issues)
 
 <br />
 <p align="center">
-  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned">
-    <img src="logo_with_text.png" alt="Logo" height="80">
+  <a href="https://github.com/open-data-product/open-data-product-berlin-building-permits-source-aligned">
+    <img src="logo-with-text.png" alt="Logo" height="80">
   </a>
 
-  <h1 align="center">Open Lifeworlds Data Product - Berlin Building Permits</h1>
+  <h1 align="center">Berlin Building Permits</h1>
 
   <p align="center">
     Source-aligned data product providing Berlin building permit data</a>
@@ -48,7 +48,7 @@ Examples:
 ## Roadmap
 
 See
-the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-building-permits-source-aligned/issues)
+the [open issues](https://github.com/open-data-product/open-data-product-berlin-building-permits-source-aligned/issues)
 for a list of proposed features (and
 known issues).
 
@@ -63,4 +63,4 @@ See [LICENSE.md](./LICENSE.md) for more information.
 
 ## Contact
 
-openlifeworlds@gmail.com
+opendataproduct@gmail.com

@@ -1,0 +1,37 @@
+type,measures,volume,usage_area,apartments,living_area,living_rooms,estimated_costs
+Wohn– und Nichtwohngebäude,212,2037,2814.2,2039,1359.8,5327,1030792
+Wohngebäude zusammen,171,642,224.7,1938,1300.2,5144,296103
+Wohngebäude mit 1 Wohnung,88,69,40.8,88,133.6,506,33933
+Wohngebäude mit 2 Wohnungen,5,5,1.9,10,10.3,43,2213
+Wohngebäude mit 3 o. m. Wohnungen,73,528,165.2,1545,1084.4,4197,235827
+Wohnheime,5,39,16.8,295,71.9,398,24130
+Wohngebäude mit Eigentumswohnungen,18,116,65.1,284,244.7,851,69979
+Öffentliche Bauherren,15,216,90.6,831,431,1853,128600
+Unternehmen,81,355,95.3,986,736.9,2800,133760
+Wohnungsunternehmen,71,320,85.6,885,669.9,2540,117898
+Immobilienfonds,5,25,9.4,66,45.2,192,12813
+"Land– und Forstw., Tierh., Fischerei",–,–,–,–,–,–,–
+Produzierendes Gewerbe,–,–,–,–,–,–,–
+"Handel, Kreditinst., Dienstleistung, Versicherung, Verkehr u. Nachr.überm.",5,10,0.4,35,21.8,68,3049
+Private Haushalte,75,71,38.8,121,132.3,491,33743
+Organisationen ohne Erwerbszweck,–,–,–,–,–,–,–
+Nichtwohngebäude,41,1395,2589.6,101,59.6,183,734689
+Anstaltsgebäude,2,40,78.6,–,–,–,27874
+Büro– und Verwaltungsgebäude,21,962,1886.3,101,59.6,183,585175
+Landwirtschaftliche Betriebsgebäude,–,–,–,–,–,–,–
+Nichtlandwirtschaftliche Betriebsgebäude,11,297,484.7,–,–,–,58978
+Fabrik– und Werkstattgebäude,2,45,78.6,–,–,–,20117
+Handelsgebäude,3,15,24.2,–,–,–,4494
+Warenlagergebäude,3,161,221.8,–,–,–,15080
+Hotels und Gaststätten,1,37,82.8,–,–,–,14298
+Sonstige Nichtwohngebäude,7,96,140,–,–,–,62662
+Ausgewählte Infrastrukturgebäude,9,136,218.7,–,–,–,90536
+Öffentliche Bauherren,2,62,97.3,–,–,–,44026
+Unternehmen,33,1273,2400.5,101,59.6,183,651035
+Wohnungsunternehmen,5,234,422.2,101,59.6,183,186725
+Immobilienfonds,9,381,651.2,–,–,–,139949
+"Land– und Forstw., Tierh., Fischerei",–,–,–,–,–,–,–
+Produzierendes Gewerbe,1,1,1.3,–,–,–,1490
+"Handel, Kreditinst., Dienstleistung, Versicherung, Verkehr u. Nachr.überm.",18,658,1325.7,–,–,–,322871
+Private Haushalte,–,–,–,–,–,–,–
+Organisationen o. Erwerbszweck,6,60,91.8,–,–,–,39628

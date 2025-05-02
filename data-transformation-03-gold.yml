@@ -1,0 +1,4346 @@
+---
+input_ports:
+  - id: berlin-building-permits-2022-01
+    files:
+      - source_file_name: berlin-building-permits-2022-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-01-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-01-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-01-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-02
+    files:
+      - source_file_name: berlin-building-permits-2022-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-02-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-02-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-02-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-03
+    files:
+      - source_file_name: berlin-building-permits-2022-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-03-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-03-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-03-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-04
+    files:
+      - source_file_name: berlin-building-permits-2022-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-04-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-04-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-04-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-05
+    files:
+      - source_file_name: berlin-building-permits-2022-05-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-05-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-05-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-05-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-05-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-05-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-06
+    files:
+      - source_file_name: berlin-building-permits-2022-06-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-06-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-06-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-06-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-06-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-06-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-07
+    files:
+      - source_file_name: berlin-building-permits-2022-07-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-07-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-07-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-07-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-07-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-07-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-08
+    files:
+      - source_file_name: berlin-building-permits-2022-08-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-08-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-08-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-08-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-08-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-08-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-09
+    files:
+      - source_file_name: berlin-building-permits-2022-09-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-09-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-09-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-09-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-09-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-09-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-10
+    files:
+      - source_file_name: berlin-building-permits-2022-10-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-10-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-10-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-10-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-10-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-10-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-11
+    files:
+      - source_file_name: berlin-building-permits-2022-11-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-11-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-11-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-11-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-11-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-11-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2022-12
+    files:
+      - source_file_name: berlin-building-permits-2022-12-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2022-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2022-12-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2022-12-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2022-12-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-01
+    files:
+      - source_file_name: berlin-building-permits-2023-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-01-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-01-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-01-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-02
+    files:
+      - source_file_name: berlin-building-permits-2023-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-02-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-02-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-02-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-03
+    files:
+      - source_file_name: berlin-building-permits-2023-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-03-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-03-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-03-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-04
+    files:
+      - source_file_name: berlin-building-permits-2023-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-04-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-04-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-04-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-05
+    files:
+      - source_file_name: berlin-building-permits-2023-05-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-05-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-05-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-05-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-05-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-05-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-06
+    files:
+      - source_file_name: berlin-building-permits-2023-06-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-06-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-06-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-06-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-06-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-06-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-07
+    files:
+      - source_file_name: berlin-building-permits-2023-07-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-07-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-07-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-07-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-07-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-07-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-08
+    files:
+      - source_file_name: berlin-building-permits-2023-08-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-08-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-08-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-08-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-08-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-08-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-09
+    files:
+      - source_file_name: berlin-building-permits-2023-09-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-09-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-09-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-09-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-09-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-09-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-10
+    files:
+      - source_file_name: berlin-building-permits-2023-10-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-10-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-10-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-10-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-10-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-10-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-11
+    files:
+      - source_file_name: berlin-building-permits-2023-11-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-11-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-11-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-11-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-11-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-11-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+  - id: berlin-building-permits-2023-12
+    files:
+      - source_file_name: berlin-building-permits-2023-12-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-6-permits-by-district-including-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-7-permits-by-district-measures-on-existing-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-7-permits-by-district-measures-on-existing-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-7-permits-by-district-measures-on-existing-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-8-permits-by-district-new-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-8-permits-by-district-new-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-8-permits-by-district-new-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+        target_file_name: berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+          - name: estimated_costs
+      - source_file_name: berlin-building-permits-2023-12-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-10-permits-by-district-new-non-residential-buildings-districts.csv
+        names:
+          - name: id
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichshain-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenburg-Wilmersdorf": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelhof-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendor": "12"
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area
+      - source_file_name: berlin-building-permits-2023-12-10-permits-by-district-new-non-residential-buildings.csv
+        target_file_name: berlin-building-permits-2023-12-10-permits-by-district-new-non-residential-buildings-city.csv
+        aggregate_by: "total"
+        names:
+          - name: id
+          - { name: district_name, remove: True }
+          - name: measures
+          - name: volume
+          - name: usage_area
+          - name: apartments
+          - name: living_area

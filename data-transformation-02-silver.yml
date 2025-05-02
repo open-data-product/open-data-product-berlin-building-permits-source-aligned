@@ -1,0 +1,3218 @@
+---
+input_ports:
+  - id: berlin-building-permits-2022-01
+    files:
+      - source_file_name: SB_F02-01-00_2022m01_BE.xlsx
+        target_file_name: berlin-building-permits-2022-01.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-01-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-01-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-02
+    files:
+      - source_file_name: SB_F02-01-00_2022m02_BE.xlsx
+        target_file_name: berlin-building-permits-2022-02.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-02-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-02-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-03
+    files:
+      - source_file_name: SB_F02-01-00_2022m03_BE.xlsx
+        target_file_name: berlin-building-permits-2022-03.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-03-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-03-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-04
+    files:
+      - source_file_name: SB_F02-01-00_2022m04_BE.xlsx
+        target_file_name: berlin-building-permits-2022-04.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-04-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-04-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-05
+    files:
+      - source_file_name: SB_F02-01-00_2022m05_BE.xlsx
+        target_file_name: berlin-building-permits-2022-05.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-05-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-05-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-06
+    files:
+      - source_file_name: SB_F02-01-00_2022m06_BE.xlsx
+        target_file_name: berlin-building-permits-2022-06.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-06-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-06-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-07
+    files:
+      - source_file_name: SB_F02-01-00_2022m07_BE.xlsx
+        target_file_name: berlin-building-permits-2022-07.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-07-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-07-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-08
+    files:
+      - source_file_name: SB_F02-01-00_2022m08_BE.xlsx
+        target_file_name: berlin-building-permits-2022-08.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-08-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-08-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-09
+    files:
+      - source_file_name: SB_F02-01-00_2022m09_BE.xlsx
+        target_file_name: berlin-building-permits-2022-09.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-09-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-09-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-10
+    files:
+      - source_file_name: SB_F02-01-00_2022m10_BE.xlsx
+        target_file_name: berlin-building-permits-2022-10.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-10-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-10-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-11
+    files:
+      - source_file_name: SB_F02-01-00_2022m11_BE.xlsx
+        target_file_name: berlin-building-permits-2022-11.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-11-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-11-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2022-12
+    files:
+      - source_file_name: SB_F02-01-00_2022m12_BE.xlsx
+        target_file_name: berlin-building-permits-2022-12.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2022-12-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2022-12-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-01
+    files:
+      - source_file_name: SB_F02-01-00_2023m01_BE.xlsx
+        target_file_name: berlin-building-permits-2023-01.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-01-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-01-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-02
+    files:
+      - source_file_name: SB_F02-01-00_2023m02_BE.xlsx
+        target_file_name: berlin-building-permits-2023-02.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-02-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-02-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-03
+    files:
+      - source_file_name: SB_F02-01-00_2023m03_BE.xlsx
+        target_file_name: berlin-building-permits-2023-03.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-03-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-03-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-04
+    files:
+      - source_file_name: SB_F02-01-00_2023m04_BE.xlsx
+        target_file_name: berlin-building-permits-2023-04.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-04-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-04-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-05
+    files:
+      - source_file_name: SB_F02-01-00_2023m05_BE.xlsx
+        target_file_name: berlin-building-permits-2023-05.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-05-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-05-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-06
+    files:
+      - source_file_name: SB_F02-01-00_2023m06_BE.xlsx
+        target_file_name: berlin-building-permits-2023-06.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-06-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-06-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-07
+    files:
+      - source_file_name: SB_F02-01-00_2023m07_BE.xlsx
+        target_file_name: berlin-building-permits-2023-07.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-07-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-07-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-08
+    files:
+      - source_file_name: SB_F02-01-00_2023m08_BE.xlsx
+        target_file_name: berlin-building-permits-2023-08.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-08-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-08-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-09
+    files:
+      - source_file_name: SB_F02-01-00_2023m09_BE.xlsx
+        target_file_name: berlin-building-permits-2023-09.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-09-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-09-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-10
+    files:
+      - source_file_name: SB_F02-01-00_2023m10_BE.xlsx
+        target_file_name: berlin-building-permits-2023-10.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-10-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-10-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-11
+    files:
+      - source_file_name: SB_F02-01-00_2023m11_BE.xlsx
+        target_file_name: berlin-building-permits-2023-11.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-11-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-11-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True
+  - id: berlin-building-permits-2023-12
+    files:
+      - source_file_name: SB_F02-01-00_2023m12_BE.xlsx
+        target_file_name: berlin-building-permits-2023-12.xlsx
+        datasets:
+          - target_file_name: berlin-building-permits-2023-12-1-permits-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 1"
+            names:
+              - name: year_month
+              - { name: building_permits_total, type: int }
+              - { name: building_permits_residential_buildings, type: int }
+              - { name: building_permits_non_residential_buildings, type: int }
+              - { name: building_measure_on_existing_buildings, type: int }
+              - { name: usage_area, type: float }
+              - { name: living_area, type: float }
+              - { name: apartments, type: int }
+              - { name: apartment_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 10
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-2-permits-new-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 2 "
+            names:
+              - name: year
+              - { name: residential_buildings, type: int }
+              - { name: residential_buildings_with_1_apartment, type: int }
+              - { name: residential_buildings_with_2_apartments, type: int }
+              - { name: residential_buildings_with_3_or_more_apartments, type: int }
+              - { name: apartments, type: int }
+              - { name: volume, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+              - { name: apartments_in_new_non_residential_buildings, type: int }
+            skip_rows: 11
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 3"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 4"
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-5-permits-by-type-and-constructor-new-buildings.csv
+            sheet_name: "Baugen. Tab. 5 "
+            names:
+              - name: type
+              - { name: measures, type: int }
+              - { name: volume, type: float }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: living_rooms, type: int }
+              - { name: estimated_costs, type: int }
+            skip_rows: 8
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-6-permits-by-district-including-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 6"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-7-permits-by-district-measures-on-existing-buildings.csv
+            sheet_name: "Baugen. Tab. 7"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-8-permits-by-district-new-buildings.csv
+            sheet_name: "Baugen. Tab. 8"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+            sheet_name: "Baugen. Tab. 9"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+              - { name: estimated_costs, type: int }
+            skip_rows: 9
+            head: 12
+            dropna: True
+          - target_file_name: berlin-building-permits-2023-12-10-permits-by-district-new-non-residential-buildings.csv
+            sheet_name: "Baugen. Tab. 10"
+            names:
+              - name: district_name
+              - { name: measures, type: int }
+              - { name: volume, type: int }
+              - { name: usage_area, type: float }
+              - { name: apartments, type: int }
+              - { name: living_area, type: float }
+            skip_rows: 9
+            head: 12
+            dropna: True

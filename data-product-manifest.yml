@@ -385,6 +385,182 @@ input_ports:
       schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/1017aa0ba02c7221/686c9dc31d49/SB_F02-01-00_2023m12_BE.xlsx
+  - id: berlin-building-permits-2024-01
+    metadata:
+      name: Baugenehmigungen in Berlin Januar 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-04-15
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/7964594c663154cd/e8ceb8f00006/SB_F02-01-00_2024m01_BE.xlsx
+  - id: berlin-building-permits-2024-02
+    metadata:
+      name: Baugenehmigungen in Berlin Februar 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-05-10
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/7a8ed1ad4dd24e42/16dda483870c/SB_F02-01-00_2024m02_BE.xlsx
+  - id: berlin-building-permits-2024-03
+    metadata:
+      name: Baugenehmigungen in Berlin März 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-05-17
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/250265e54dff3d79/5acba5c9f353/SB_F02-01-00_2024m03_BE.xlsx
+  - id: berlin-building-permits-2024-04
+    metadata:
+      name: Baugenehmigungen in Berlin April 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-06-11
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/e404fb6f3904ff87/2a93bdfef4bb/SB_F02-01-00_2024m04_BE.xlsx
+  - id: berlin-building-permits-2024-05
+    metadata:
+      name: Baugenehmigungen in Berlin Mai 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-07-10
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/1fe09980f1d576eb/890fd818cdd5/SB_F02-01-00_2024m05_BE.xlsx
+  - id: berlin-building-permits-2024-06
+    metadata:
+      name: Baugenehmigungen in Berlin Juni 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-08-13
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/279397c0e541d647/8576bd07be1e/SB_F02-01-00_2024m06_BE.xlsx
+  - id: berlin-building-permits-2024-07
+    metadata:
+      name: Baugenehmigungen in Berlin Juli 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-09-12
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/bd91693e2edc8722/8e94c96f1d3e/SB_F02-01-00_2024m07_BE.xlsx
+  - id: berlin-building-permits-2024-08
+    metadata:
+      name: Baugenehmigungen in Berlin August 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-10-09
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/4ebe77f0c3e68fd4/ab0663385d70/SB_F02-01-00_2024m08_BE.xlsx
+  - id: berlin-building-permits-2024-09
+    metadata:
+      name: Baugenehmigungen in Berlin September 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-11-11
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/51f7e79bc0d03540/12bd2217c2d0/SB_F02-01-00_2024m09_BE.xlsx
+  - id: berlin-building-permits-2024-10
+    metadata:
+      name: Baugenehmigungen in Berlin Oktober 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-12-10
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/6a610e1dbeeaffa5/f3d2d232cf39/SB_F02-01-00_2024m10_BE.xlsx
+  - id: berlin-building-permits-2024-11
+    metadata:
+      name: Baugenehmigungen in Berlin November 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-01-14
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/35fad984143d4be5/7313296c980b/SB_F02-01-00_2024m11_BE.xlsx
+  - id: berlin-building-permits-2024-12
+    metadata:
+      name: Baugenehmigungen in Berlin Dezember 2024
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2024-02-12
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/c6e7396decda8564/1fedf7390d18/SB_F02-01-00_2024m12_BE.xlsx
+  - id: berlin-building-permits-2025-01
+    metadata:
+      name: Baugenehmigungen in Berlin Januar 2025
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2025-04-11
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/c9b0d50f616d0963/bea6199c17b4/SB_F02-01-00_2025m01_BE.xlsx
+  - id: berlin-building-permits-2025-02
+    metadata:
+      name: Baugenehmigungen in Berlin Februar 2025
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2025-04-15
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/78e0dfbe51490463/391bb2283392/SB_F02-01-00_2025m02_BE.xlsx
+  - id: berlin-building-permits-2025-03
+    metadata:
+      name: Baugenehmigungen in Berlin März 2025
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2025-05-14
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/97acd74ff3d49a2b/db3c3acaef5a/SB_F02-01-00_2025m03_BE.xlsx
+  - id: berlin-building-permits-2025-04
+    metadata:
+      name: Baugenehmigungen in Berlin April 2025
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
+      url: https://www.statistik-berlin-brandenburg.de/f-ii-1-m
+      license: CC-BY-3.0-Namensnennung
+      updated: 2025-06-13
+      schema: []
+    files:
+      - https://download.statistik-berlin-brandenburg.de/d5acabeae3dcf6e0/3f2b498ae6e6/SB_F02-01-00_2025m04_BE.xlsx
 transformation_steps:
   - name: Data extractor
     path: lib/extract/data_extractor.py
@@ -879,6 +1055,326 @@ output_ports:
       - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2023-12/berlin-building-permits-2023-12-7-permits-by-district-measures-on-existing-buildings.csv
       - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2023-12/berlin-building-permits-2023-12-8-permits-by-district-new-buildings.csv
       - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2023-12/berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-01
+    metadata:
+      name: Berlin Building Permits 2024 01
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-01
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-01/berlin-building-permits-2024-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-02
+    metadata:
+      name: Berlin Building Permits 2024 02
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-02
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-02/berlin-building-permits-2024-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-03
+    metadata:
+      name: Berlin Building Permits 2024 03
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-03
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-03/berlin-building-permits-2024-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-04
+    metadata:
+      name: Berlin Building Permits 2024 04
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-04
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-04/berlin-building-permits-2024-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-05
+    metadata:
+      name: Berlin Building Permits 2024 05
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-05
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-05/berlin-building-permits-2024-05-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-06
+    metadata:
+      name: Berlin Building Permits 2024 06
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-06
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-06/berlin-building-permits-2024-06-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-07
+    metadata:
+      name: Berlin Building Permits 2024 07
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-07
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-07/berlin-building-permits-2024-07-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-08
+    metadata:
+      name: Berlin Building Permits 2024 08
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-08
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-08/berlin-building-permits-2024-08-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-09
+    metadata:
+      name: Berlin Building Permits 2024 09
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-09
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-09/berlin-building-permits-2024-09-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-10
+    metadata:
+      name: Berlin Building Permits 2024 10
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-10
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-10/berlin-building-permits-2024-10-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-11
+    metadata:
+      name: Berlin Building Permits 2024 11
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-11
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-11/berlin-building-permits-2024-11-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2024-12
+    metadata:
+      name: Berlin Building Permits 2024 12
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2024-12
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2024-12/berlin-building-permits-2024-12-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2025-01
+    metadata:
+      name: Berlin Building Permits 2025 01
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2025-01
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-01/berlin-building-permits-2025-01-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2025-02
+    metadata:
+      name: Berlin Building Permits 2025 02
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2025-02
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-02/berlin-building-permits-2025-02-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2025-03
+    metadata:
+      name: Berlin Building Permits 2025 03
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2025-03
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-03/berlin-building-permits-2025-03-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
+  - id: berlin-building-permits-2025-04
+    metadata:
+      name: Berlin Building Permits 2025 04
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/02-silver/berlin-building-permits-2025-04
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-1-permits-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-10-permits-by-district-new-non-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-2-permits-new-residential-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-3-permits-by-type-and-constructor-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-4-permits-by-type-and-constructor-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-5-permits-by-type-and-constructor-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-6-permits-by-district-including-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-7-permits-by-district-measures-on-existing-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-8-permits-by-district-new-buildings.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/02-silver/berlin-building-permits-2025-04/berlin-building-permits-2025-04-9-permits-by-district-new-buildings-with-1-or-2-apartments.csv
   - id: berlin-building-permits-2022-01
     metadata:
       name: Berlin Building Permits 2022 01
@@ -1359,6 +1855,326 @@ output_ports:
       - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2023-12/berlin-building-permits-2023-12-8-permits-by-district-new-buildings-districts.csv
       - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2023-12/berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
       - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2023-12/berlin-building-permits-2023-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-01
+    metadata:
+      name: Berlin Building Permits 2024 01
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-01
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-01/berlin-building-permits-2024-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-02
+    metadata:
+      name: Berlin Building Permits 2024 02
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-02
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-02/berlin-building-permits-2024-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-03
+    metadata:
+      name: Berlin Building Permits 2024 03
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-03
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-03/berlin-building-permits-2024-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-04
+    metadata:
+      name: Berlin Building Permits 2024 04
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-04
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-04/berlin-building-permits-2024-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-05
+    metadata:
+      name: Berlin Building Permits 2024 05
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-05
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-05/berlin-building-permits-2024-05-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-06
+    metadata:
+      name: Berlin Building Permits 2024 06
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-06
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-06/berlin-building-permits-2024-06-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-07
+    metadata:
+      name: Berlin Building Permits 2024 07
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-07
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-07/berlin-building-permits-2024-07-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-08
+    metadata:
+      name: Berlin Building Permits 2024 08
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-08
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-08/berlin-building-permits-2024-08-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-09
+    metadata:
+      name: Berlin Building Permits 2024 09
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-09
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-09/berlin-building-permits-2024-09-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-10
+    metadata:
+      name: Berlin Building Permits 2024 10
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-10
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-10/berlin-building-permits-2024-10-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-11
+    metadata:
+      name: Berlin Building Permits 2024 11
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-11
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-11/berlin-building-permits-2024-11-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2024-12
+    metadata:
+      name: Berlin Building Permits 2024 12
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2024-12
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2024-12/berlin-building-permits-2024-12-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2025-01
+    metadata:
+      name: Berlin Building Permits 2025 01
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2025-01
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-01/berlin-building-permits-2025-01-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2025-02
+    metadata:
+      name: Berlin Building Permits 2025 02
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2025-02
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-02/berlin-building-permits-2025-02-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2025-03
+    metadata:
+      name: Berlin Building Permits 2025 03
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2025-03
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-03/berlin-building-permits-2025-03-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
+  - id: berlin-building-permits-2025-04
+    metadata:
+      name: Berlin Building Permits 2025 04
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-data-product-berlin-building-permits/tree/main/data/03-gold/berlin-building-permits-2025-04
+      license:
+      updated: 2025-06-13
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-10-permits-by-district-new-non-residential-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-10-permits-by-district-new-non-residential-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-6-permits-by-district-including-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-6-permits-by-district-including-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-7-permits-by-district-measures-on-existing-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-7-permits-by-district-measures-on-existing-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-8-permits-by-district-new-buildings-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-8-permits-by-district-new-buildings-districts.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-city.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-data-product-berlin-building-permits/main/data/03-gold/berlin-building-permits-2025-04/berlin-building-permits-2025-04-9-permits-by-district-new-buildings-with-1-or-2-apartments-districts.csv
 observability:
 consumers: []
 use_cases: []

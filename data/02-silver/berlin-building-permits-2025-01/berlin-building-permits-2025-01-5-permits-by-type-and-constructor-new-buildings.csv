@@ -1,0 +1,37 @@
+type,measures,volume,usage_area,apartments,living_area,living_rooms,estimated_costs
+Wohn- und Nichtwohngebäude,102,999,1000.4,738,501.9,1837,661994
+Wohngebäude zusammen,83,258,85.3,738,501.9,1837,159255
+Wohngebäude mit 1 Wohnung,42,38,17.4,42,74.9,251,26271
+Wohngebäude mit 2 Wohnungen,7,7,2.3,14,13.4,64,3188
+Wohngebäude mit 3 o. m. Wohnungen,33,200,65.6,602,385,1442,119556
+Wohnheime,1,13,–,80,28.6,80,10240
+Wohngebäude mit Eigentumswohnungen,9,38,9.1,111,75.9,281,20368
+Öffentliche Bauherren,–,–,–,–,–,–,–
+Unternehmen,31,194,59.5,631,379.2,1389,115323
+Wohnungsunternehmen,20,152,52.8,450,293.3,1072,88077
+Immobilienfonds,3,8,–,33,16.2,76,9597
+"Land- und Forstw., Tierh., Fischerei",–,–,–,–,–,–,–
+Produzierendes Gewerbe,3,11,5.6,42,20.9,90,4878
+"Handel, Kreditinst., Dienstleistung, Versicherung, Verkehr u. Nachr.überm.",5,22,1.1,106,48.8,151,12771
+Private Haushalte,52,64,25.8,107,122.7,448,43932
+Organisationen ohne Erwerbszweck,–,–,–,–,–,–,–
+Nichtwohngebäude,19,741,915.1,–,–,–,502739
+Anstaltsgebäude,1,137,162.7,–,–,–,120575
+Büro- und Verwaltungsgebäude,5,216,368,–,–,–,119386
+Landwirtschaftliche Betriebsgebäude,1,14,23.1,–,–,–,338
+Nichtlandwirtschaftliche Betriebsgebäude,7,62,108.5,–,–,–,20605
+Fabrik- und Werkstattgebäude,1,8,10.9,–,–,–,1190
+Handelsgebäude,3,25,52.9,–,–,–,11627
+Warenlagergebäude,1,23,41.7,–,–,–,7623
+Hotels und Gaststätten,–,–,–,–,–,–,–
+Sonstige Nichtwohngebäude,5,312,252.9,–,–,–,241835
+Ausgewählte Infrastrukturgebäude,7,450,416,–,–,–,362503
+Öffentliche Bauherren,6,313,253.4,–,–,–,241928
+Unternehmen,11,418,653.7,–,–,–,255155
+Wohnungsunternehmen,2,16,39.5,–,–,–,8890
+Immobilienfonds,2,150,244.8,–,–,–,66411
+"Land- und Forstw., Tierh., Fischerei",1,14,23.1,–,–,–,338
+Produzierendes Gewerbe,1,8,10.9,–,–,–,1190
+"Handel, Kreditinst., Dienstleistung, Versicherung, Verkehr u. Nachr.überm.",5,230,335.5,–,–,–,178326
+Private Haushalte,1,5,2.6,–,–,–,72
+Organisationen o. Erwerbszweck,1,5,5.5,–,–,–,5584

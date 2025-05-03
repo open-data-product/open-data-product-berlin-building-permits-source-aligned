@@ -1,0 +1,13 @@
+district_name,measures,volume,usage_area,apartments,living_area,estimated_costs
+Mitte,–,–,–,–,–,–
+Friedrichshain-Kreuzberg,–,–,–,–,–,–
+Pankow,14,10,1.3,14,21.5,4834
+Charlottenburg-Wilmersdorf,–,–,–,–,–,–
+Spandau,3,3,1.4,3,6.1,1057
+Steglitz-Zehlendorf,1,2,2.6,1,2.6,1339
+Tempelhof-Schöneberg,2,2,0.3,2,4.1,860
+Neukölln,5,3,1.5,5,6.4,1544
+Treptow-Köpenick,1,1,0.3,1,1.4,325
+Marzahn-Hellersdorf,6,6,2.3,8,11.5,2570
+Lichtenberg,1,1,0.1,1,1,289
+Reinickendorf,4,3,0.9,6,6,1709

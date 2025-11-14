@@ -1,0 +1,1585 @@
+---
+dataProductDescriptor: data-product-descriptor
+info:
+  fullyQualifiedName: urn:dpds:opendataproduct:dataproducts:berlin-building-permits-source-aligned:1.0
+  name: Berlin Building Permits (source-aligned)
+  version: '1.0'
+  domain: domain
+  owner:
+    id: Open Data product
+    name: Open Data product
+  id: berlin-building-permits-source-aligned
+  entityType:
+  displayName: Berlin Building Permits (source-aligned)
+  description: Source-aligned data product providing Berlin building permits data
+  contactPoints:
+interfaceComponents:
+  outputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-01-csv
+      fullyQualifiedName: berlin-building-permits-2022-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-01-parquet
+      fullyQualifiedName: berlin-building-permits-2022-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-02-csv
+      fullyQualifiedName: berlin-building-permits-2022-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-02-parquet
+      fullyQualifiedName: berlin-building-permits-2022-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-03-csv
+      fullyQualifiedName: berlin-building-permits-2022-03-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-03-parquet
+      fullyQualifiedName: berlin-building-permits-2022-03-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-04-csv
+      fullyQualifiedName: berlin-building-permits-2022-04-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-04-parquet
+      fullyQualifiedName: berlin-building-permits-2022-04-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-05-csv
+      fullyQualifiedName: berlin-building-permits-2022-05-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-05-parquet
+      fullyQualifiedName: berlin-building-permits-2022-05-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-06-csv
+      fullyQualifiedName: berlin-building-permits-2022-06-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-06-parquet
+      fullyQualifiedName: berlin-building-permits-2022-06-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-07-csv
+      fullyQualifiedName: berlin-building-permits-2022-07-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-07-parquet
+      fullyQualifiedName: berlin-building-permits-2022-07-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-08-csv
+      fullyQualifiedName: berlin-building-permits-2022-08-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-08-parquet
+      fullyQualifiedName: berlin-building-permits-2022-08-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-09-csv
+      fullyQualifiedName: berlin-building-permits-2022-09-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-09-parquet
+      fullyQualifiedName: berlin-building-permits-2022-09-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-10-csv
+      fullyQualifiedName: berlin-building-permits-2022-10-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-10-parquet
+      fullyQualifiedName: berlin-building-permits-2022-10-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-11-csv
+      fullyQualifiedName: berlin-building-permits-2022-11-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-11-parquet
+      fullyQualifiedName: berlin-building-permits-2022-11-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-12-csv
+      fullyQualifiedName: berlin-building-permits-2022-12-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-12-parquet
+      fullyQualifiedName: berlin-building-permits-2022-12-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-01-csv
+      fullyQualifiedName: berlin-building-permits-2023-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-01-parquet
+      fullyQualifiedName: berlin-building-permits-2023-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-02-csv
+      fullyQualifiedName: berlin-building-permits-2023-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-02-parquet
+      fullyQualifiedName: berlin-building-permits-2023-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-03-csv
+      fullyQualifiedName: berlin-building-permits-2023-03-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-03-parquet
+      fullyQualifiedName: berlin-building-permits-2023-03-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-04-csv
+      fullyQualifiedName: berlin-building-permits-2023-04-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-04-parquet
+      fullyQualifiedName: berlin-building-permits-2023-04-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-05-csv
+      fullyQualifiedName: berlin-building-permits-2023-05-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-05-parquet
+      fullyQualifiedName: berlin-building-permits-2023-05-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-06-csv
+      fullyQualifiedName: berlin-building-permits-2023-06-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-06-parquet
+      fullyQualifiedName: berlin-building-permits-2023-06-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-07-csv
+      fullyQualifiedName: berlin-building-permits-2023-07-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-07-parquet
+      fullyQualifiedName: berlin-building-permits-2023-07-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-08-csv
+      fullyQualifiedName: berlin-building-permits-2023-08-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-08-parquet
+      fullyQualifiedName: berlin-building-permits-2023-08-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-09-csv
+      fullyQualifiedName: berlin-building-permits-2023-09-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-09-parquet
+      fullyQualifiedName: berlin-building-permits-2023-09-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-10-csv
+      fullyQualifiedName: berlin-building-permits-2023-10-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-10-parquet
+      fullyQualifiedName: berlin-building-permits-2023-10-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-11-csv
+      fullyQualifiedName: berlin-building-permits-2023-11-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-11-parquet
+      fullyQualifiedName: berlin-building-permits-2023-11-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-12-csv
+      fullyQualifiedName: berlin-building-permits-2023-12-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-12-parquet
+      fullyQualifiedName: berlin-building-permits-2023-12-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-01-csv
+      fullyQualifiedName: berlin-building-permits-2024-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-01-parquet
+      fullyQualifiedName: berlin-building-permits-2024-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-02-csv
+      fullyQualifiedName: berlin-building-permits-2024-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-02-parquet
+      fullyQualifiedName: berlin-building-permits-2024-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-03-csv
+      fullyQualifiedName: berlin-building-permits-2024-03-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-03-parquet
+      fullyQualifiedName: berlin-building-permits-2024-03-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-04-csv
+      fullyQualifiedName: berlin-building-permits-2024-04-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-04-parquet
+      fullyQualifiedName: berlin-building-permits-2024-04-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-05-csv
+      fullyQualifiedName: berlin-building-permits-2024-05-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-05-parquet
+      fullyQualifiedName: berlin-building-permits-2024-05-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-06-csv
+      fullyQualifiedName: berlin-building-permits-2024-06-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-06-parquet
+      fullyQualifiedName: berlin-building-permits-2024-06-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-07-csv
+      fullyQualifiedName: berlin-building-permits-2024-07-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-07-parquet
+      fullyQualifiedName: berlin-building-permits-2024-07-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-08-csv
+      fullyQualifiedName: berlin-building-permits-2024-08-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-08-parquet
+      fullyQualifiedName: berlin-building-permits-2024-08-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-09-csv
+      fullyQualifiedName: berlin-building-permits-2024-09-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-09-parquet
+      fullyQualifiedName: berlin-building-permits-2024-09-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-10-csv
+      fullyQualifiedName: berlin-building-permits-2024-10-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-10-parquet
+      fullyQualifiedName: berlin-building-permits-2024-10-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-11-csv
+      fullyQualifiedName: berlin-building-permits-2024-11-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-11-parquet
+      fullyQualifiedName: berlin-building-permits-2024-11-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-12-csv
+      fullyQualifiedName: berlin-building-permits-2024-12-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-12-parquet
+      fullyQualifiedName: berlin-building-permits-2024-12-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-01-csv
+      fullyQualifiedName: berlin-building-permits-2025-01-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-01-parquet
+      fullyQualifiedName: berlin-building-permits-2025-01-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-02-csv
+      fullyQualifiedName: berlin-building-permits-2025-02-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-02-parquet
+      fullyQualifiedName: berlin-building-permits-2025-02-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-03-csv
+      fullyQualifiedName: berlin-building-permits-2025-03-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-03-parquet
+      fullyQualifiedName: berlin-building-permits-2025-03-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-04-csv
+      fullyQualifiedName: berlin-building-permits-2025-04-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-04-parquet
+      fullyQualifiedName: berlin-building-permits-2025-04-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  inputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-01
+      fullyQualifiedName: berlin-building-permits-2022-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-02
+      fullyQualifiedName: berlin-building-permits-2022-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-03
+      fullyQualifiedName: berlin-building-permits-2022-03
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-04
+      fullyQualifiedName: berlin-building-permits-2022-04
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-05
+      fullyQualifiedName: berlin-building-permits-2022-05
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-06
+      fullyQualifiedName: berlin-building-permits-2022-06
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-07
+      fullyQualifiedName: berlin-building-permits-2022-07
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-08
+      fullyQualifiedName: berlin-building-permits-2022-08
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-09
+      fullyQualifiedName: berlin-building-permits-2022-09
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-10
+      fullyQualifiedName: berlin-building-permits-2022-10
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-11
+      fullyQualifiedName: berlin-building-permits-2022-11
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2022-12
+      fullyQualifiedName: berlin-building-permits-2022-12
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-01
+      fullyQualifiedName: berlin-building-permits-2023-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-02
+      fullyQualifiedName: berlin-building-permits-2023-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-03
+      fullyQualifiedName: berlin-building-permits-2023-03
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-04
+      fullyQualifiedName: berlin-building-permits-2023-04
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-05
+      fullyQualifiedName: berlin-building-permits-2023-05
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-06
+      fullyQualifiedName: berlin-building-permits-2023-06
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-07
+      fullyQualifiedName: berlin-building-permits-2023-07
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-08
+      fullyQualifiedName: berlin-building-permits-2023-08
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-09
+      fullyQualifiedName: berlin-building-permits-2023-09
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-10
+      fullyQualifiedName: berlin-building-permits-2023-10
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-11
+      fullyQualifiedName: berlin-building-permits-2023-11
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2023-12
+      fullyQualifiedName: berlin-building-permits-2023-12
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-01
+      fullyQualifiedName: berlin-building-permits-2024-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-02
+      fullyQualifiedName: berlin-building-permits-2024-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-03
+      fullyQualifiedName: berlin-building-permits-2024-03
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-04
+      fullyQualifiedName: berlin-building-permits-2024-04
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-05
+      fullyQualifiedName: berlin-building-permits-2024-05
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-06
+      fullyQualifiedName: berlin-building-permits-2024-06
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-07
+      fullyQualifiedName: berlin-building-permits-2024-07
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-08
+      fullyQualifiedName: berlin-building-permits-2024-08
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-09
+      fullyQualifiedName: berlin-building-permits-2024-09
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-10
+      fullyQualifiedName: berlin-building-permits-2024-10
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-11
+      fullyQualifiedName: berlin-building-permits-2024-11
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2024-12
+      fullyQualifiedName: berlin-building-permits-2024-12
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-01
+      fullyQualifiedName: berlin-building-permits-2025-01
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-02
+      fullyQualifiedName: berlin-building-permits-2025-02
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-03
+      fullyQualifiedName: berlin-building-permits-2025-03
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-building-permits-2025-04
+      fullyQualifiedName: berlin-building-permits-2025-04
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  discoveryPorts:
+  observabilityPorts:
+  controlPorts:
+internalComponents:
+components:
+tags:
+externalDocs:

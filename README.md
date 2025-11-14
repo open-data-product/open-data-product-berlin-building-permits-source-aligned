@@ -15,7 +15,12 @@
 
 ## About The Project
 
-See [data product canvas](docs/data-product-canvas.md) and [ODPS canvas](./docs/odps-canvas.md).
+See
+* [Data Product Canvas](docs/data-product-canvas.md)
+* [Open Data Product Specification canvas](./docs/odps-canvas.md) and 
+* [Data Product Descriptor Specification canvas](./docs/dpds-canvas.md)
+
+See also [main.ipynb](./main.ipynb) for a sample notebook.
 
 ### Built With
 

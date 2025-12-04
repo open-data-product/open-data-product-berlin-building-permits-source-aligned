@@ -10,18 +10,17 @@ product:
     visibility: public
     OutputFileFormats: []
     brandSlogan:
-    categories:
-      - timeseries
+    categories: []
     description: Source-aligned data product providing Berlin building permits data
-    logoURL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
-    productSeries: Berlin Timeseries Series
+    logoURL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-building-permits-source-aligned/refs/heads/main/logo-with-text.png
+    productSeries:
     standards: []
     tags:
       - berlin
       - building
       - housing
     useCases: []
-    valueProposition: Providing Berlin building permits data
+    valueProposition:
     version: '1.0'
   sla: []
   dataAccess:

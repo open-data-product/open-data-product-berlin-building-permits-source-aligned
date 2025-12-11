@@ -47,8 +47,8 @@ script_path = os.path.dirname(file_path)
 
 
 @click.command()
-@click.option("--clean", default=False, help="Regenerate results.")
-@click.option("--quiet", default=False, help="Do not log outputs.")
+@click.option("--clean", "-c", default=False, is_flag=True, help="Regenerate results.")
+@click.option("--quiet", "-q", default=False, is_flag=True, help="Do not log outputs.")
 def main(clean, quiet):
     data_path = os.path.join(script_path, "data")
     bronze_path = os.path.join(data_path, "01-bronze")
